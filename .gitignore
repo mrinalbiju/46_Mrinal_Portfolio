@@ -1,0 +1,7 @@
+.DS_Store
+.thumbnail
+doc-page.js
+support.js
+*.dc.html
+scraps/
+uploads/

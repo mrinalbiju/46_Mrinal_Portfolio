@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mrinal Biju — Computer Science Student &amp; Developer</title>
+<meta name="description" content="Portfolio of Mrinal Biju — final-year B.Tech Computer Science student building AI/ML and full-stack products." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script>
+  /* Runs before first paint: flags that JS is available (so the reveal
+     styles apply) and restores the saved theme without a flash. */
+  (function () {
+    var root = document.documentElement;
+    root.classList.add('js');
+    try {
+      var saved = localStorage.getItem('mb-portfolio-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      root.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    } catch (e) { /* private mode — fall back to the markup default */ }
+  })();
+</script>
+</head>
+<body>
+
+<div class="site-bg" id="hero-bg" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">Mrinal Biju</a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+        <span aria-hidden="true" id="theme-icon">☾</span>
+      </button>
+      <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-text" data-reveal>
+        <p class="eyebrow"><span>Thiruvananthapuram, Kerala · Available May 2027</span></p>
+        <h1 id="hero-title">I build and ship stuff <em>end-to-end</em>.</h1>
+        <p class="lede">Final-year B.Tech Computer Science student working across AI/ML and full-stack development — from computer-vision pipelines to cross-platform apps that ship.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">See my work</a>
+          <a class="btn btn-ghost" href="files/Mrinal-Biju-Resume.pdf" download>Download résumé</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Focus</dt><dd>AI / ML &amp; Full-stack</dd></div>
+          <div><dt>Experience</dt><dd>SWE Intern @ UST</dd></div>
+          <div><dt>Open to</dt><dd>Internships &amp; grad roles</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-figure" data-reveal>
+        <img src="images/portrait.png" alt="Portrait of Mrinal Biju" width="800" height="1000" />
+        <figcaption>B.Tech CSE ’27<br />Mar Baselios College of Engineering &amp; Technology</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="section-num">01 / 06</p>
+        <h2 id="about-title">About me</h2>
+      </div>
+      <div class="section-body prose" data-reveal>
+        <p>I’m a final-year Computer Science student at Mar Baselios College of Engineering and Technology, drawn to problems where machine learning meets a real interface — something a person can actually open and use.</p>
+        <p>Most of what I’ve built has been end-to-end: the crowd-panic detection system took me from OpenCV and CSRNet through to a Flask dashboard security staff could read at a glance; SafeShelf took me from an async PostgreSQL schema to a barcode scanner running on a phone. I like owning that whole path, and I use AI-assisted tooling heavily to move quickly through the parts that aren’t the interesting problem.</p>
+        <aside class="callout">
+          <h3>What I’m looking for</h3>
+          <p>A team building practical, intelligent products where I can work across the stack and learn from people who ship.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt" aria-labelledby="skills-title">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="section-num">02 / 06</p>
+        <h2 id="skills-title">Skills</h2>
+      </div>
+      <div class="section-body" data-reveal>
+
+        <article class="skill-block">
+          <h3>Proficiency</h3>
+          <dl class="skill-list" id="skill-list">
+            <!-- Rendered from JS (see js/script.js) -->
+          </dl>
+        </article>
+
+        <div class="skill-cols">
+          <article class="skill-block">
+            <h3>Tools &amp; platforms</h3>
+            <ul class="tag-list">
+              <li>Git</li><li>GitHub</li><li>Docker</li><li>PostgreSQL</li>
+              <li>MySQL</li><li>VS Code</li><li>Claude Code</li><li>Figma</li>
+            </ul>
+          </article>
+          <article class="skill-block">
+            <h3>Currently learning</h3>
+            <ol class="path-list">
+              <li>Model deployment &amp; inference optimisation</li>
+              <li>System design for scalable APIs</li>
+              <li>Cloud fundamentals (AWS)</li>
+            </ol>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="section-head section-head-wide">
+        <p class="section-num">03 / 06</p>
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-note">Rendered from a JavaScript data array — filter by technology, tap a card for details.</p>
+      </div>
+
+      <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter projects by technology">
+        <!-- Filter buttons rendered from JS -->
+      </div>
+
+      <div class="card-grid" id="project-grid">
+        <!-- Project cards rendered from JS -->
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No projects match that filter.</p>
+    </div>
+  </section>
+
+  <section id="internship" class="section section-alt" aria-labelledby="internship-title">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="section-num">04 / 06</p>
+        <h2 id="internship-title">Internship</h2>
+      </div>
+      <div class="section-body" data-reveal>
+        <article class="record">
+          <header class="record-head">
+            <h3>Software Engineer Intern</h3>
+            <p class="record-meta">UST · Retailing · May – June 2026</p>
+          </header>
+          <p>Worked on <strong>SafeShelf</strong>, an AI grocery companion that scans a product and checks its ingredients against the user’s dietary constraints.</p>
+          <ul class="bullets">
+            <li>Built the cross-platform iOS/Android app in React 19, TypeScript and Capacitor with real-time barcode and camera scanning.</li>
+            <li>Developed a FastAPI backend on SQLModel and async PostgreSQL exposing versioned REST APIs.</li>
+            <li>Integrated a Groq LLM with the USDA FoodData Central API to flag dietary conflicts in real time.</li>
+            <li>Implemented JWT auth with refresh rotation, and set up the monorepo, HTTPS device testing and Docker deploys.</li>
+          </ul>
+          <table class="data-table">
+            <caption>Internship record</caption>
+            <thead>
+              <tr><th scope="col">Organisation</th><th scope="col">Role</th><th scope="col">Duration</th><th scope="col">Description</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">UST</th>
+                <td>Software Engineer Intern</td>
+                <td>May – Jun 2026</td>
+                <td>Full-stack development of SafeShelf: React/Capacitor app, FastAPI + PostgreSQL backend, LLM ingredient analysis.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section" aria-labelledby="education-title">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="section-num">05 / 06</p>
+        <h2 id="education-title">Education</h2>
+      </div>
+      <div class="section-body" data-reveal>
+        <table class="data-table">
+          <caption>Academic history</caption>
+          <thead>
+            <tr><th scope="col">Institution</th><th scope="col">Degree / Programme</th><th scope="col">Duration</th><th scope="col">Grade</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mar Baselios College of Engineering &amp; Technology</th>
+              <td>B.Tech, Computer Science &amp; Engineering</td>
+              <td>2023 – 2027</td>
+              <td>CGPA 7.26 / 10</td>
+            </tr>
+            <tr>
+              <th scope="row">St. Thomas Central School, Thiruvananthapuram</th>
+              <td>Higher Secondary, CBSE</td>
+              <td>2021 – 2023</td>
+              <td>72%</td>
+            </tr>
+            <tr>
+              <th scope="row">St. Thomas Central School, Thiruvananthapuram</th>
+              <td>Secondary, CBSE</td>
+              <td>2021</td>
+              <td>80%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="sub-head">Training &amp; workshops</h3>
+        <ul class="bullets">
+          <li><strong>Intel Unnati Industrial Training 2024</strong> — built “Customized AI Kitchen for India”, an AI solution tailored to Indian culinary requirements.</li>
+          <li><strong>Flutter Workshop, ICT Academy</strong> — cross-platform mobile development in Dart: widget UI, state management, navigation, deployment.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt" aria-labelledby="contact-title">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="section-num">06 / 06</p>
+        <h2 id="contact-title">Contact</h2>
+      </div>
+      <div class="section-body contact-body" data-reveal>
+
+        <article class="contact-details">
+          <h3>Reach me directly</h3>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:mrinalbiju81@gmail.com">mrinalbiju81@gmail.com</a></li>
+            <li><span>Phone</span><a href="tel:+917306817636">+91 73068 17636</a></li>
+            <li><span>GitHub</span><a href="https://github.com/mrinalbiju" target="_blank" rel="noopener">github.com/mrinalbiju</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mrinal-biju-17126b274/" target="_blank" rel="noopener">linkedin.com/in/mrinal-biju</a></li>
+            <li><span>Résumé</span><a href="files/Mrinal-Biju-Resume.pdf" download>Download PDF</a></li>
+          </ul>
+        </article>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <h3>Or send a message</h3>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" />
+            <p class="error" id="name-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" />
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What would you like to talk about?"></textarea>
+            <p class="error" id="message-error" role="alert"></p>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="success" id="form-success" role="status" hidden>Thanks — your message looks good. I’ll get back to you soon.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Mrinal Biju · Built with semantic HTML5, CSS3 and vanilla JavaScript.</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/mrinalbiju" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/mrinal-biju-17126b274/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:mrinalbiju81@gmail.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button id="to-top" class="to-top" type="button" aria-label="Scroll back to top">↑</button>
+
+<div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" type="button" data-close aria-label="Close details">×</button>
+    <img id="modal-img" alt="" hidden />
+    <p class="eyebrow" id="modal-period"></p>
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+    <ul class="bullets" id="modal-points"></ul>
+    <ul class="tag-list" id="modal-tags"></ul>
+    <div class="modal-links" id="modal-links"></div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script type="module" src="js/floating-lines.js"></script>
+</body>
+</html>
