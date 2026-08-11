@@ -242,8 +242,11 @@ export function initFloatingLines(container) {
   }
   function onPointerLeave() { targetInfluence = 0; }
 
-  container.addEventListener('pointermove', onPointerMove);
-  container.addEventListener('pointerleave', onPointerLeave);
+  // Bound to window/document, not container: most of the page sits on top of
+  // this fixed, z-index:-1 canvas with normal pointer-events, so a
+  // container-scoped listener would only ever fire inside the hero.
+  window.addEventListener('pointermove', onPointerMove);
+  document.addEventListener('pointerleave', onPointerLeave);
 
   const themeObserver = new MutationObserver(applyThemeColors);
   themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
@@ -272,8 +275,8 @@ export function initFloatingLines(container) {
     cancelAnimationFrame(raf);
     ro.disconnect();
     themeObserver.disconnect();
-    container.removeEventListener('pointermove', onPointerMove);
-    container.removeEventListener('pointerleave', onPointerLeave);
+    window.removeEventListener('pointermove', onPointerMove);
+    document.removeEventListener('pointerleave', onPointerLeave);
     mesh.geometry.dispose();
     material.dispose();
     renderer.dispose();
