@@ -1,5 +1,6 @@
 .DS_Store
 .thumbnail
+node_modules/
 doc-page.js
 support.js
 *.dc.html
